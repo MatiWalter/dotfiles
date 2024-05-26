@@ -7,11 +7,10 @@ source $ZSH/oh-my-zsh.sh
 
 alias cl='clear'
 alias py='python3'
-alias env='source env/bin/activate'
+alias venv='source env/bin/activate'
 alias denv='deactivate'
 alias pipir='pip install -r requirements.txt'
-alias checkout='cd ~/muvinai/py_checkout3; env; code .'
-alias l.='ls -A | egrep "^\."'
+alias l.='ls -A | grep -E "^\."'
 alias cd..='cd ..'
 alias pdw='pwd'
 alias df='df -h'
@@ -21,8 +20,8 @@ alias lt='ls --human-readable --size -1 -S --classify'
 alias left='ls -t -1 -long'
 alias hg='history | grep'
 alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
+alias egrep='grep -E --color=auto'
+alias fgrep='grep -F --color=auto'
 alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
 
 
